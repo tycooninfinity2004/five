@@ -1,11 +1,30 @@
 <!DOCTYPE html><html lang="en">
 <head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0"><meta name="description"content="Tiy chat room"><meta name="keyword"content="chat room"><meta name="author"content="chatroom">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="google-site-verification" content="google4529c80fe439d379.html"><link rel="stylesheet"href="script.css"><script src="script.js"></script><link rel="icon"href="image.png"sizes="192x192"><title>chat room</title></head><body>
-
     
-   <center> <a href="https://livechat277.chatango.com"><button style="background:blue;width:50%;height:40px;color:white; outline:none; justify-contents: center;text-align: center;align-items:center;border:none;font-size:17px;">Get started</button></a></center>
+  <center><div><button style="background:blue;width:50%;height:40px;color:white; outline:none; justify-contents: center;text-align: center;align-items:center;border:none;font-size:17px;"onclick="getstarted()"id="button">Get started</button></div></center>
     
+    <div id="go"style="background:black; width:100%;height:95%;left:0%;top:10%; position:fixed; display:block;"onclick="remove()" >
+        
+        
+   <p style="background:red; width:60%;height:75%;left:0%;top:10%; position:fixed;display:none;" id="popup">Call me TIY</p>
+    </div>
     
+ <script>
+     
+     function getstarted() {
+         popup.style.display="block";
+          
+     }
+     
+     
+     function remove() {
+         go.style.display="none";
+     }
+     
+ </script>
+ 
+ 
     
     
 </body>
