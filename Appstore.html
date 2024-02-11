@@ -1,0 +1,297 @@
+<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0"><meta name="description"content="App Store"><meta name="keyword"content="install app"><meta name="author"content="download app">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="google-site-verification" content="google4529c80fe439d379.html"><title>Tycoon loan</title><link rel="stylesheet"href="tycoonvip.css"><script src="tycoonvip.js"></script><link rel="icon"href="TIY.png"sizes="192x192">
+</head><body id="body">
+    
+    </br></br></br></br></br>
+    
+    <h3 id="popular">Popular Apps and Games</h3>    
+    </br></br></br>
+  <div class="icon-container">
+    <div class="icon" onclick="tiy();"><img src="TIY.png"class="img1" alt="">TIY<p>Make money offline</p></div>
+    <div class="icon" onclick="gpt()"><img src="A1finance.png"class="img1" alt="">A1 Finance<p>Borrow Loan</p></div>
+    <div class="icon" onclick="palmpay();"><img src="drivingmaster1.png" class="img1"alt="">Driving Master1<p>Make money while Traveling with your car</p></div>
+    <div class="icon" onclick="showMenu('icon1')">Vendor</div>
+    <div class="icon" onclick="showMenu('icon2')">Bullion</div>
+    <div class="icon" onclick="showMenu('icon3')">corn</div>
+    <div class="icon" onclick="showMenu('icon1')">Van</div>
+    <div class="icon" onclick="showMenu('icon2')">Ram</div>
+    <div class="icon" onclick="showMenu('icon1')">fine</div>
+    <div class="icon" onclick="showMenu('icon2')">lorry</div>
+    <div class="icon" onclick="showMenu('icon3')">breme</div>
+    <div class="icon" onclick="showMenu('icon1')">TIY</div>
+    <div class="icon" onclick="showMenu('icon2')">rat</div>
+    <div class="icon" onclick="showMenu('icon3')">Game</div>
+    <div class="icon" onclick="showMenu('icon3')">Game</div>
+    <!-- Add more icons -->
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <div id="menu" class="menu">
+    <div class="menu-icon">Icon</div>
+    <button class="download-btn">Download</button>
+  </div>
+
+
+<div id="header">
+  <input type="text" id="search" placeholder="Search apps & Games..." onkeyup="searchIcon()"/></div>
+</body>
+</html>
+
+
+<style>
+    
+    
+    #popular {
+        color:white;
+        font-family: Monaco;
+        position: absolute;
+        left:6%;
+    }
+    
+    #header {
+        position:fixed;
+        background:black;
+        width:100%;
+        height:100px;
+        top:0%;
+        left:0%;
+    }
+    
+    .img1 {
+        width:90px;
+        height:90px;
+        border-radius:20px;
+        
+    }
+    
+    #search {
+        position:fixed;
+        background:#151515e6;
+        color:white;
+        font-family:monospace;
+        top:2%;
+        left:5%;
+        width:60%;
+        border-radius:30px;
+        outline:none;
+        padding:20px;
+        border:none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    }
+.icon-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding:20px;
+  
+}
+
+.icon {
+  width: 100px;
+  height: 200px;
+  font-family:monospace;
+  background-color: white;
+  color: black;
+  margin-right: 40px;
+  padding:0px;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid black;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+}
+
+.menu-icon {
+  float: left;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.download-btn {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+<script>
+    function tiy() {
+       window.location.href="https://google.com";
+    }
+    
+    function gpt() {
+        window.location.href="https://google.com";
+        
+    }
+    
+    function palmpay() {
+        window.location.href="https://google.com";
+    }
+</script>
+
+
+<script>
+function showMenu(icon) {
+  var menu = document.getElementById("menu");
+  menu.style.display = "block";
+
+  // Insert code to position the menu on top of the clicked icon
+  
+  var clickedIcon = document.getElementsByClassName("icon-" + iclickedIconcon)[0];
+  var iconRect = clickedIcon.getBoundingClientRect();
+  var menuWidth = menu.getBoundingClientRect().width;
+
+  // Position the menu on top of the clicked icon
+  var leftPosition = iconRect.left + (iconRect.width / 2) - (menuWidth / 2);
+  menu.style.top = iconRect.top - 60 + "px"; // 60px is the height of the menu
+  menu.style.left = leftPosition + "px";
+
+  
+  
+  
+  
+}
+
+function searchIcon() {
+  var input, filter, container, icon, i, txtValue;
+  input = document.getElementById('search');
+  filter = input.value.toUpperCase();
+  container = document.getElementsByClassName('icon-container')[0];
+  icon = container.getElementsByClassName('icon');
+  for (i = 0; i < icon.length; i++) {
+    txtValue = icon[i].textContent || icon[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      icon[i].style.display = "";
+    } else {
+      icon[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+
+
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.download-btn {
+  display: block;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+</style>
+
+
+  
+
+<style>
+.hidden {
+  display: none;
+}
+
+#popup {
+  position: fixed;
+  top:630px;
+  width: 90%;
+  left:50%;
+  height:20%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  padding: 0px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+</style>
+
+
+
+
+<script>
+function downloadAPK(filename) {
+  // Create a temporary anchor element
+  var link = document.createElement('a');
+  link.href = filename;
+  // Set the download attribute with the filename
+  link.download = filename;
+  // Append the anchor element to the body
+  document.body.appendChild(link);
+  // Trigger the click event on the anchor element
+  link.click();
+  // Remove the anchor element from the body
+  document.body.removeChild(link);
+}
+</script>
+
+
+
+
+<script>
+window.addEventListener('load', function() {
+  var popup = document.getElementById('popup');
+  setTimeout(function() {
+    popup.classList.remove('hidden');
+    setTimeout(function() {
+      popup.classList.add('hidden');
+    }, 60000); // 10 seconds
+  }, 2000); // 20 seconds
+});
+
+window.addEventListener('beforeunload', function() {
+  sessionStorage.setItem('popupShown', 'true');
+});
+
+window.addEventListener('load', function() {
+  if (sessionStorage.getItem('popupShown')) {
+    var popup = document.getElementById('popup');
+    popup.classList.remove('hidden');
+  }
+});
+</script>
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
